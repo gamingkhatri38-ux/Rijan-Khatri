@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Omni AI&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: Arial;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #343541;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sidebar {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 250px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #202123;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.new-chat {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #3b82f6;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-area {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-header {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #444654;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.chat-box {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow-y: auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.message {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 70%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.user {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #2563eb;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-left: auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.ai {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #444654;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.input-area {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #40414f;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>input {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>button {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #10a37f;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="container"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="sidebar"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Omni AI&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="new-chat" onclick="newChat()"&gt;New Chat&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="chat-area"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="chat-header"&gt;Omni AI Assistant&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="chat-box" class="chat-box"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="input-area"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input id="input" placeholder="Ask something..." onkeydown="handleKey(event)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button onclick="send()"&gt;Send&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">const chatBox = document.getElementById("chat-box");</p>
+<p class="p2"><br></p>
+<p class="p1">function addMessage(text, cls) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const div = document.createElement("div");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>div.className = "message " + cls;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>div.innerText = text;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>chatBox.appendChild(div);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>chatBox.scrollTop = chatBox.scrollHeight;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">async function send() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const input = document.getElementById("input");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const text = input.value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (!text) return;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>addMessage(text, "user");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>input.value = "";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>const typing = document.createElement("div");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>typing.className = "message ai";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>typing.innerText = "Typing...";</p>
+<p class="p1"><span class="Apple-converted-space">  </span>chatBox.appendChild(typing);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>const res = await fetch("http://localhost:3000/chat", {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>method: "POST",</p>
+<p class="p1"><span class="Apple-converted-space">    </span>headers: {"Content-Type": "application/json"},</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body: JSON.stringify({ message: text })</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>const data = await res.json();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>typing.remove();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>addMessage(data.reply, "ai");</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function handleKey(e) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>if (e.key === "Enter") send();</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function newChat() {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>chatBox.innerHTML = "";</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
